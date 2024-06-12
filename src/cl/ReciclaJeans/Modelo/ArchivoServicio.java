@@ -1,5 +1,7 @@
 package cl.ReciclaJeans.Modelo;
 
+import cl.ReciclaJeans.Utilidad.Utilidad;
+
 import java.io.*;
 import java.util.Iterator;
 
@@ -25,6 +27,7 @@ public class ArchivoServicio {
     }
 
     //Metodos
+    Utilidad utilidad = new Utilidad();
     ProductoSercicio producImp = new ProductoSercicio();
     public void cargarDatos(ProductoSercicio cargaproducto , String ruta){
         String rutaCompleta;
@@ -49,9 +52,10 @@ public class ArchivoServicio {
                 cargaproducto.agregarProductosimportar( data[0], data[1], data[2],
                         data[3], data[4], data[5], data[6]);
             }
+            utilidad.espera();
             System.out.println("Se ha realizado la importacion de datos");
         }catch(IOException e) {
-            System.out.println("El archivo no pudo ser cargado" + e);
+            System.out.println("El archivo no pudo ser cargado" );
         }
 
     }

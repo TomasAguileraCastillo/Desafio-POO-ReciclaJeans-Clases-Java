@@ -28,6 +28,7 @@ public class ProductoSercicio {
     }
 
     //Metodo
+    Scanner sc = new Scanner(System.in);
     public void listaProductos(){
         if (listaProductos.isEmpty()) {
             System.out.println("\n");
@@ -57,11 +58,6 @@ public class ProductoSercicio {
         Producto producto = new Producto(artic,prec, descr, codi, tall, marc, col);
         if (producto != null) {
             listaProductos.add(producto);
-            //System.out.println("ddd"+listaProductos);
-          /*  for (Iterator<Producto> iterador = listaProductos.iterator(); iterador.hasNext();) {
-                Producto element = iterador.next();
-                System.out.println(element);
-            }*/
         }else {
             System.out.println("\n");
             System.out.println("   no es posible agregar producto");
@@ -85,34 +81,35 @@ public class ProductoSercicio {
                 System.out.println("  ****************************************** ");
                 System.out.println("\n");
                 System.out.println("Ingrese la opción a editar de los datos del producto:");
-                Scanner sc = new Scanner(System.in);
+
                 int opcionDetalle = sc.nextInt();
                 if (opcionDetalle == 1) {
-                    System.out.println("Ingrese el Nombre de Articulo:\n");
-                    String nuevodato = sc.next();
+                    sc.nextLine();
+                    System.out.println("Ingrese el Nombre de Articulo: ");
+                    String nuevodato = sc.nextLine();
                     producto.setArticulo(nuevodato);
                 } else if (opcionDetalle == 2) {
-                    System.out.println("Ingrese el nuevo Precio del producto:\n");
+                    System.out.println("Ingrese el nuevo Precio del producto: ");
                     String nuevodato = sc.next();
                     producto.setPrecio(nuevodato);
                 } else if (opcionDetalle == 3) {
-                    System.out.println("Ingrese la nueva Descripcion del producto:\n");
+                    System.out.println("Ingrese la nueva Descripcion del producto: ");
                     String nuevodato = sc.next();
                     producto.setDescripcion(nuevodato);
                 } else if (opcionDetalle == 4) {
-                    System.out.println("Ingrese el nuevo codigo del producto:\n");
+                    System.out.println("Ingrese el nuevo codigo del producto: ");
                     String nuevodato = sc.next();
                     producto.setCodigo(nuevodato);
                 } else if (opcionDetalle == 5) {
-                    System.out.println("Ingrese la nueva talla del producto:\n");
+                    System.out.println("Ingrese la nueva talla del producto: ");
                     String nuevodato = sc.next();
                     producto.setTalla(nuevodato);
                 } else if (opcionDetalle == 6) {
-                    System.out.println("Ingrese la nueva Marca del producto:\n");
+                    System.out.println("Ingrese la nueva Marca del producto: ");
                     String nuevodato = sc.next();
                     producto.setMarca(nuevodato);
-                }else {
-                    System.out.println("Ingrese el nuevo Color del producto:\n");
+                }else if (opcionDetalle == 7){
+                    System.out.println("Ingrese el nuevo Color del producto: ");
                     String nuevodato = sc.next();
                     producto.setColor(nuevodato);
                 }

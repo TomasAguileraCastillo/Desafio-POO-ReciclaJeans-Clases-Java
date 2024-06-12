@@ -157,15 +157,21 @@ Caso: Salir.
 
 ----------------------------------------------------------------------------
 
-Nota : Para probar el Desafio se debera crear una carpeta en disco C: donde se debe descargar el archivo de prueba
+Nota 1 : Para probar el Desafio se debera crear una carpeta en disco C: donde se debe descargar el archivo de prueba
 <i>"ProductosImportados.csv"</i> es la que se ingresara al elegir la opcion importar(4) 
+
+Nota 2 : Para probar el desafio se debera acceder a el mendiante simbolo de sistema 
 
 Imagenes de proyecto 
 
+![Captura.JPG](src%2Fcl%2FReciclaJeans%2Fimagenes%20del%20proyecto%2FCaptura.JPG)
 
+![Captura1.JPG](src%2Fcl%2FReciclaJeans%2Fimagenes%20del%20proyecto%2FCaptura1.JPG)
 
+![Captura2.JPG](src%2Fcl%2FReciclaJeans%2Fimagenes%20del%20proyecto%2FCaptura2.JPG)
 
+![Captura4.JPG](src%2Fcl%2FReciclaJeans%2Fimagenes%20del%20proyecto%2FCaptura4.JPG)
 
+![Captura3.JPG](src%2Fcl%2FReciclaJeans%2Fimagenes%20del%20proyecto%2FCaptura3.JPG)
 
-
-
+![img.png](src%2Fcl%2FReciclaJeans%2Fimagenes%20del%20proyecto%2Fimg.png)

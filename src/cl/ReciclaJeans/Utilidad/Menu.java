@@ -49,7 +49,9 @@ public class Menu {
                 importar();
 
             } else if (op == 4) {//salir
-                System.out.println("Se ha terminado el programa");
+                System.out.println("Abandonando el sistema de clientes...");
+                utilidad.espera();
+                System.out.println("Acaba de salir del sistema");
                 utilidad.limpiaespera();
                 System.exit(0);
             }else{
@@ -62,7 +64,7 @@ public class Menu {
     public void listar(){
        productoSercicio.listaProductos();
         utilidad.espera();
-        utilidad.espera();
+
     }
 //////////////////////////////////////////////////////////////
     public void editar(){
@@ -73,7 +75,7 @@ public class Menu {
         String codigoedicion = sc.next();
         productoSercicio.edicion(codigoedicion);
         utilidad.espera();
-        utilidad.espera();
+
     }
 
 /////////////////////////////////////////////////////////////
@@ -84,7 +86,7 @@ public class Menu {
         String rutaaimportar = sc.next();
         importar.cargarDatos(productoSercicio, rutaaimportar);
         utilidad.espera();
-        utilidad.espera();
+
     }
 
 

@@ -160,7 +160,7 @@ Caso: Salir.
 Nota 1 : Para probar el Desafio se debera crear una carpeta en disco C: donde se debe descargar el archivo de prueba
 <i>"ProductosImportados.csv"</i> es la que se ingresara al elegir la opcion importar(4) 
 
-Nota 2 : Para probar el desafio se debera acceder a el mendiante simbolo de sistema 
+Nota 2 : Para probar el desafio se debera acceder a el mendiante simbolo de sistema o consola
 
 Imagenes de proyecto 
 
